@@ -12,7 +12,7 @@ To generate the gu.dic file, follow these steps:
 
 4. Execute the `mapping.py` script. This will produce a text file that contains Gujarati words mapped to their respective phonemes. Be aware that this file may include some characters not found in `non_silence_phones.txt`. To resolve this, use the `check.py` script to identify words with these uncommon characters.
 
-5. Add these unique characters along with their corresponding replacements in a text file named `non_available.txt`. For example, if you want to replace "@:" with "@," add a line in the format "@: @" in `non_available.txt`.
+5. Add these unique characters along with their corresponding replacements in a text file named `non_available.txt`. For example, if you want to replace "@:" with "@," add a line in the format "@: @" in `non_available.txt`. (Note there is a space between @: and @ in the format) 
 
 6. Finally, run the `change_phones.py` script. This script will replace the specified phonemes with their corresponding words, as specified in `non_available.txt`. The result is a text file named `new.dic`, which serves as your final file containing mapped words with their phonemes.
 
